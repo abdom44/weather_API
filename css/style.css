@@ -1,0 +1,195 @@
+.mainBg{
+    background-color: #1e202b;
+}
+.scndBg{
+    background-color: #009ad8;
+}
+.nav-link{
+    color: white;
+    border: transparent 2px solid;
+    padding: 2 20px !important;
+    margin: 0 5px;
+    font-size: 14px;
+    transition: all .6s;
+}
+.nav-link:hover{
+    border: #009ad8 2px solid;
+    color: #009ad8 !important;
+}
+.navItemHome{
+    border: #009ad8 2px solid !important;
+    color: #009ad8 !important;
+}
+.nav-link:focus{
+    color: white;
+}
+.banner{
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    height:352px;
+    background-repeat: no-repeat;
+}
+input[placeholder= "Find Your Location..."],footer input{
+    color: white;
+    border: unset !important;
+}
+input[placeholder= "Find Your Location..."]:focus, footer input:focus{
+    border: unset !important;
+    box-shadow: unset !important;
+    background-color: #1e202b !important;
+    color: white !important;
+}
+input[placeholder= "Find Your Location..."]::placeholder,footer input::placeholder{
+    font-size: 15px;
+}
+.btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px ;
+}
+.btn:focus{
+    box-shadow: unset;
+}
+.card-footer img {
+    width: 21px;
+    height: 21px;
+}
+.col-lg-4{
+    padding: 0 !important;
+}
+.firstDay{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.firstDayHeader {
+    background: #2d303d !important;
+    color: #bfc1c8 ;
+    padding:.5rem 1rem;
+}
+.firstDayHeader p{
+    margin: 0;
+}
+#location{
+    color: #bfc1c8;
+}
+.card-body{
+    background-color: #323544 !important;
+}
+.degree{
+    font-size: 4rem;
+    color: white;
+    margin-right:40px;
+    font-weight: 500;
+}
+#weatherIcon{
+    width: 90px;
+    height: 90px;
+    margin-top: 20px;
+}
+#location{
+    color: #bfc1c8;
+    font-size: 22px;
+}
+#status {
+    color: #009ad8;
+}
+#umbrella, #wind,#compass{
+    color: #bfc1c8;
+    font-size: 15px !important;
+}
+.secDay{
+    background-color: #262936;
+}
+.thirdDay{
+    background-color: #323544 ;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#secDayHeader{
+    color: #bfc1c8 ;
+    padding:.5rem 1rem;
+    background-color: #222530;
+
+}
+#thirdDayHeader{
+    color: #bfc1c8 ;
+    padding:.5rem 1rem;
+}
+.weather{
+    border-radius: 8px;
+} 
+.forecastIcon{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 25px;
+}
+.forecast-body{
+    padding: 50px 20px 10px;
+}
+.forecastTemp{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+small{
+    color: #bfc1c8;
+    font-size: 1rem;
+}
+.status{
+    color: #009ad8;
+    font-size: 1rem;
+}
+.firstDay ,.secDay,.thirdDay{
+
+    margin-top:-150px;
+    margin-bottom: 50px;
+    
+
+}
+#thirdDayHeader{
+    background-color: #2d303d !important;
+}
+footer{
+    background-color: #262936;
+}
+footer p{
+    color: #bfc1c8;
+}
+footer .icons{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1e202b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+}
+.icons i{
+    color: #4e9bd8;
+}
+.icons:hover{
+    background-color: #009ad8;
+    cursor: pointer;
+}
+.icons:hover i{
+    color: white !important;
+}
+.icons i{
+    font-size: 1.2rem;
+}
+@media screen and (max-width :975px) {
+    .firstDay ,.secDay,.thirdDay{
+
+        margin-top:0;
+        margin-bottom: 0;
+        /* border-radius: 8px; */
+        
+    
+    }
+    .firstDay{
+        margin-top: -150px;
+    }
+}

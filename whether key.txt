@@ -1,0 +1,4 @@
+46b90b63723e42b5bfb134311212109
+
+
+https://api.weatherapi.com/v1/forecast.json?key=46b90b63723e42b5bfb134311212109&q=egypt&days=3

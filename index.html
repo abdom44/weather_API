@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f4805ebd0f.js" crossorigin="anonymous"></script>   
+</head>
+<body class="mainBg">
+    <nav class="navbar navbar-expand-lg mainBg py-5 ">
+        <div class="container container-fluid">
+            <a class="navbar-brand" href="#"> 
+                <div class="d-flex ">
+                <img src="images/logo.png" alt="">
+                <div class="ps-3 d-flex align-items-center">
+                    <h5 class="m-0 text-white" >weather</h5>
+                </div>
+                </div>
+            </a>
+            <div class="collapse navbar-collapse d-flex justify-content-end flex-row" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                    <a class="nav-link active navItemHome rounded-pill" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                    <a class="nav-link rounded-pill" href="#">Neaws</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">Live Camera</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link rounded-pill" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+        <div class="container pt-5 position-relative">
+            <form class="position-relative">
+                <input type="text " id="searchInput" class=" w-100 form-control mainBg rounded-pill px-3 py-3 position-relative" placeholder="Find Your Location...">
+                <button class="btn scndBg  text-white rounded-pill px-5  " type="button" > Find</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="mainBg">
+        <div class="container  ">
+            <div class="weather">
+                <div class=" row ">
+                    <div class="firstDay col-lg-4">
+                        <div id="firstDayHeader " class="firstDayHeader d-flex justify-content-between">
+                            <p id="today"></p>
+                            <p id="dateOfToday"></p>
+                        </div>
+                        <div class="bg-secondary card-body py-4 px-4">
+                            <div id="location"></div>
+                            <div  class=" d-flex ">
+                                <div class="degree" id="temp">
+
+                                </div>
+                                <img src="" id="weatherIcon" alt="">
+                            </div>
+                            <div><p  id="status" class=" my-4"></p></div>
+                            <div class="card-foter  d-flex ">
+                                <div id="umbrella" class="me-3"><img src="images/icon-umberella.png" class="me-2" alt=""></div>
+                                <div id="wind" class="me-3"><img src="images/icon-wind.png" class="me-2" alt=""></div>
+                                <div id="compass" class="me-3 "><img src="images/icon-compass.png" class="me-2" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secDay col-lg-4">
+                        <div class="forecast-header text-center" id="secDayHeader"></div>
+                        <div class="text-center forecast-body">
+                            <img src="" id="secDayIcon" class="forecastIcon" alt="">
+                            <div id="forecast2Temp" class="forecastTemp" ></div>
+                            <small id="small2" ></small>
+                            <div id="secDayStatus" class="status my-3"></div>
+                        </div>
+                    </div>
+                    <div class="thirdDay col-lg-4">
+                        <div class="forecast-header text-center" id="thirdDayHeader">
+                            After Tomorow
+                        </div>
+                        <div class="text-center forecast-body">
+                            <img src="images/64x64/day/248.png" id="thirdDayIcon" class="forecastIcon" alt="">
+                            <div  id="forecast3Temp" class="forecastTemp" >
+                                25<sup>o</sup>C
+                            </div>
+                            <small id="small3" >20.6<sup>o</sup></small>
+                            <div id="thirdDayStatus" class="status my-3"> status</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="pb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="container pt-5 position-relative">
+                        <form class="position-relative">
+                            <input type="text " class=" w-100 form-control mainBg rounded-pill px-3 py-3 position-relative" placeholder="Enter your Email To Subscribe..">
+                            <button class="btn scndBg  text-white rounded-pill px-5  " type="button" > Find</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center align-items-center pb-0 ">
+                    <div class="icons">
+                        <a href=""> <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href=""> <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href=""> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="icons">
+                        <a href=""> <i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="ps-4 fs-6 mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+
+<!--js  -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
